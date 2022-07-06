@@ -1,8 +1,8 @@
-#!/bin/bash
-
+#!/usr/bin/bash 
+ 
 while read subdomain; do 
-	if host "$subdomain.google.com" &> /dev/null; then 
-		echo "$subdomain.google.com" ;
+	if host "$subdomain.example.com" &> /dev/null; then 
+		echo "$subdomain.example.com" ;
 	fi 
 done < subdomain.txt
 
